@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="helper.js"></script>
+</head>
+<body onload="initial()">
+<nav>
+    <div class="nav-wrapper">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li style="float:right"><a class="active" href="about.html">About</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="flex-container">
+    <div class="header">Welcome</div>
+<div class="content">
+<form>
+    <label for="text" style="color:rgb(75,0,130);"><b>Text:</b></label>
+    <input type="text" id="text" name="text" placeholder="Enter text"><br><br>
+    <div class="buttonHolder">
+        <button id="add" class="add_text" onclick="addText(document.getElementById('text').value); return false;">Add
+        </button>
+        <input type="reset" value="Clear">
+    </div>
+</form>
+</div>
+<div class="content_list">
+    <p style="color:rgb(0,191,255);">Message Board!</p>
+    <button id="show" class="show_list" onclick="showList();">Show List
+    </button>
+    <button id="hide" class="hide_list" onclick="hideList();">Hide List
+    </button>
+    <button id="clear" class="clear_list" onclick="clearList();">Clear List
+    </button>
+    <div id="demo"></div>
+</div>
+</div>
+</body>
+</html>

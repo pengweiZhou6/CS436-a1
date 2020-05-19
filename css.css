@@ -1,0 +1,109 @@
+html {
+    background: url(UBC.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+span{
+    background-color: #98FB98;
+    font-size: 3rem;
+}
+img {
+    position: relative;
+    z-index: 1;
+}
+
+/*https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.header{
+    margin-top: 1%;
+    font-size: 400%;
+    text-align: center;
+    border: 5px solid green;
+    background-color: #4CAF50;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.active {
+    background-color: #4CAF50;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.content {
+    /*position: absolute;*/
+    /*top: 22%;*/
+    /*left: 50%;*/
+    align-self: center;
+    height: 8%;
+    padding: 10px 25px 20px 20px;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.content_list {
+    /*position: absolute;*/
+    /*top: 60%;*/
+    /*left: 50%;*/
+    align-self: center;
+    width: 30%;
+
+    max-height: 500px;
+    padding: 10px 20px 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: auto;
+}
+
+.line {
+    color: whitesmoke;
+}
+button:hover{background-color:lightskyblue;}
+.content_list.button.active {
+    background: green;
+}
+.buttonHolder{ text-align: center; }
+#vertical {
+    background-color:blue;
+    color: #FFFFFF;
+}
+#horizontal {
+    background-color: yellow;
+}
+.button_stuff{
+    position:relative;
+    z-index: 2;
+}
