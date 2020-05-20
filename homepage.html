@@ -17,17 +17,23 @@
 </nav>
 <div class="flex-container">
     <div class="header">Welcome</div>
-<div class="content">
-<form>
-    <label for="text" style="color:rgb(75,0,130);"><b>Text:</b></label>
-    <input type="text" id="text" name="text" placeholder="Enter text"><br><br>
-    <div class="buttonHolder">
-        <button id="add" class="add_text" onclick="addText(document.getElementById('text').value); return false;">Add
-        </button>
-        <input type="reset" value="Clear">
+    <div class="content">
+        <form>
+            <div class="your-class">
+                <label for="text" style="color:rgb(75,0,130);"><b>Name:</b></label>
+                <input type="text" id="user" name="user" placeholder="Enter user name"><br><br>
+                <label for="text" style="color:rgb(75,0,130);"><b>Text:</b></label>
+                <input type="text" id="text" name="text" placeholder="Enter message"><br><br>
+            </div>
+            <div class="buttonHolder">
+                <button id="add" class="add_text"
+                        onclick="addText(document.getElementById('user').value,document.getElementById('text').value); return false;">
+                    Add
+                </button>
+                <input type="reset" value="Clear">
+            </div>
+        </form>
     </div>
-</form>
-</div>
 <div class="content_list">
     <p style="color:rgb(0,191,255);">Message Board!</p>
     <button id="show" class="show_list" onclick="showList();">Show List

@@ -50,8 +50,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .active {
     background-color: #4CAF50;
+}
+.your-class input{
+    float:right;
 }
 .flex-container {
     display: flex;
@@ -87,10 +91,17 @@ body {
     background: rgba(0,0,0,0.6);
     overflow: auto;
 }
-
+.name{
+    color: #98FB98;
+}
+.msg{
+    color: aqua;
+}
 .line {
     color: whitesmoke;
+
 }
+
 button:hover{background-color:lightskyblue;}
 .content_list.button.active {
     background: green;
@@ -100,10 +111,56 @@ button:hover{background-color:lightskyblue;}
     background-color:blue;
     color: #FFFFFF;
 }
+.name, .msg
+{
+    display:inline;
+}
 #horizontal {
     background-color: yellow;
 }
 .button_stuff{
     position:relative;
     z-index: 2;
+}
+
+.card-container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 150px;
+    perspective: 600px;
+    position: relative;
+    width: 150px;
+
+}
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    background: #98FB98;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.card .back {
+    background: #111111;
+    text-align:center;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro{
+    color: darkcyan;
 }
